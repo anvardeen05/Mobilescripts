@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="DeviceSuite" annotations="JDK" parallel="tests">
+
+<test name="Device 1">
+
+<parameter name="port" value="4723">
+
+</parameter>
+
+<parameter name="device" value="da7e6aee0504">
+
+</parameter>
+
+<parameter name="version" value="8.0.0">
+
+</parameter>
+
+<parameter name="platformname" value="Android">
+
+</parameter>
+
+<classes>
+
+<class name="samples.GridExecution">
+
+<methods>
+
+<include name="Surfing" />
+
+</methods>
+
+</class>
+
+</classes>
+
+</test>
+
+<test name="Device 2" >
+
+<parameter name="port" value="4724">
+
+</parameter>
+
+<parameter name="device" value="NSM3Y18213024516">
+
+</parameter>
+
+<parameter name="platformname" value="Android">
+
+</parameter>
+
+<parameter name="version" value="7.0">
+
+</parameter>
+
+<classes>
+
+<class name="samples.GridExecution">
+
+<methods>
+
+<include name="Surfing" />
+
+</methods>
+
+</class>
+
+</classes>
+
+</test>
+
+</suite>

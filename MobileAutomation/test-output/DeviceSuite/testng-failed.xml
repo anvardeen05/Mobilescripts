@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DeviceSuite]" parallel="none">
+  <parameter name="port" value="4724"/>
+  <parameter name="device" value="NSM3Y18213024516"/>
+  <parameter name="version" value="7.0"/>
+  <parameter name="platformname" value="Android"/>
+  <test name="Device 2(failed)" parallel="none">
+    <parameter name="port" value="4724"/>
+    <parameter name="device" value="NSM3Y18213024516"/>
+    <parameter name="version" value="7.0"/>
+    <parameter name="platformname" value="Android"/>
+    <classes>
+      <class name="samples.GridExecution">
+        <methods>
+          <include name="Surfing"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- samples.GridExecution -->
+    </classes>
+  </test> <!-- Device 2(failed) -->
+</suite> <!-- Failed suite [DeviceSuite] -->
